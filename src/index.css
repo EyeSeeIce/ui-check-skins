@@ -1,0 +1,27 @@
+@import 'reset-css';
+@import './assets/font.css';
+@import './assets/variables.css';
+
+:root {
+  font-family: pop, sans-serif;
+  background-color: var(--background);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: pop, sans-serif;
+  color: #f3f3f3;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+
+body {
+  min-height: 100vh;
+  max-height: 100vh;
+}

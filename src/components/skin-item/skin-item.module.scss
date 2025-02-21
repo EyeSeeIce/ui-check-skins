@@ -1,0 +1,53 @@
+.block {
+  border-radius: 10px;
+  border: 1px solid rgba(145, 175, 253, 0.12);
+  background: transparent;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  gap: 16px;
+  height: 200px;
+
+  img {
+    width: 100%;
+  }
+
+  &_main {
+    transition: 0.2s;
+    img {
+
+      transition: opacity 0.2s;
+    }
+  }
+
+  &_variant {
+    img {
+      height: 96px;
+      transition: opacity 0.2s;
+    }
+  }
+
+
+}
+
+
+.dialog {
+  background: #fff;
+}
+
+.grid {
+  padding: 8px;
+  gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10.37rem, 1fr)) !important;
+}
+
+.label {
+  color: #F4F4F4;
+  text-align: center;
+  font-size: 14px;
+}

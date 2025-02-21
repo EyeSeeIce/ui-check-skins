@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  background: #212533;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bar {
+  background: linear-gradient(
+                  to right,
+                  rgb(23, 131, 145) 0%, rgb(23, 131, 145) 8%,
+                  rgb(118, 180, 0) 8%, rgb(118, 180, 0) 16%,
+                  rgb(229, 191, 38) 16%, rgb(229, 191, 38) 39%,
+                  rgb(255, 128, 41) 39%, rgb(255, 128, 41) 46%,
+                  rgb(255, 62, 47) 46%, rgb(255, 62, 47) 100%,
+
+  ) !important;
+
+  div {
+    background: transparent !important;
+  }
+}
+
+.handle {
+  background: #000 !important;
+
+  &:before {
+  }
+}
+
+.space {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

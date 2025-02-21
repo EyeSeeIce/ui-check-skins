@@ -1,0 +1,26 @@
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10.37rem, 1fr)) !important;
+  gap: 25px;
+  max-height: 100vh;
+  overflow: auto;
+  padding-right: 20px;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    width: 30px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #222b4a90;
+  }
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+

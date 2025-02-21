@@ -1,0 +1,23 @@
+:root {
+    --accent: #6358DC;
+    --primary: #1c1c1c;
+    --secondary: #323232;
+    --background: #F4F4F4;
+    --black: #000000;
+    --black50: #00000050;
+    --black30: #00000030;
+    --black10: #00000010;
+    --white: #FFFFFF;
+
+    --gray-1: #ECECEC;
+
+    --border-s: 4px;
+    --border-m: 8px;
+    --border-l: 12px;
+    --border-xl: 16px;
+
+    --padding-s: 12px;
+    --padding-m: 16px;
+    --padding-l: 20px;
+    --padding-xl: 24px;
+}
