@@ -1,9 +1,9 @@
 import styles from './variant-list.module.scss'
-import { useNavigate, useParams } from 'react-router';
-import { useGetSkinsQuery, useUpdateSkinMutation } from '../../redux/services/skin.service.ts';
+import { useParams } from 'react-router';
+import { useGetSkinsQuery } from '../../redux/services/skin.service.ts';
 import { TStep } from '../../redux/modules/route.module.ts';
 import { SkinItem } from '../skin-item';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { SkinSettings } from '../skin-settings';
 
 export const VariantList = () => {
@@ -35,6 +35,7 @@ export const VariantList = () => {
           {Object.entries(skins)?.map(([skinId, skin]) => {
 
             return (
+              // @ts-ignore
               <SkinItem onClick={(key) => handleClick(key)} skin_key={skinId} weapon_name={skin.weapon_name} img={skin.image_url}
                         paint_name={skin.paint_name} />
             )

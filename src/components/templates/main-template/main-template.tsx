@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import styles from './main-template.module.scss';
 import { Header } from '../component/header';
 import { SkinsSidebar } from '../component/skins-sidebar';

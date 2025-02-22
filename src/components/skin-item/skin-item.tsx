@@ -1,7 +1,5 @@
-import {SkinVariant} from "../../types/skin.ts";
 import styles from './skin-item.module.scss'
 import cn from "classnames";
-import { useNavigate } from 'react-router';
 
 type Props = {
     skin_key: number,

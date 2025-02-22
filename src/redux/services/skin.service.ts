@@ -1,4 +1,4 @@
-import { BaseQueryArg, createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { RequestSkinsDto, UpdateSkinDto } from '../../types/skin.ts';
 import { TStep } from '../modules/route.module.ts';
 

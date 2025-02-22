@@ -1,10 +1,8 @@
 import styles from './skin-settings.module.scss';
 import { useGetSkinsQuery, useUpdateSkinMutation } from '../../redux/services/skin.service.ts';
 import { TStep } from '../../redux/modules/route.module.ts';
-import { useState } from 'react';
-import { Button, Divider, HStack, Input, Slider } from 'rsuite';
+import { Button, Divider, Input, Slider } from 'rsuite';
 import { Controller, useForm } from 'react-hook-form';
-import { useParams } from 'react-router';
 
 
 type Props = {
@@ -15,7 +13,7 @@ type Props = {
 }
 
 export const SkinSettings = (props: Props) => {
-  const { control, register, handleSubmit, getValues } = useForm({
+  const { control, handleSubmit } = useForm({
     defaultValues: {
       weapon_wear: 0.001,
       weapon_seed: 40,
@@ -26,7 +24,7 @@ export const SkinSettings = (props: Props) => {
   const { defindex, paint, weapontype } = props;
   const [update] = useUpdateSkinMutation();
 
-  const { data, isSuccess } = useGetSkinsQuery(null);
+  const { data } = useGetSkinsQuery(null);
 
   if (!data) {
     return <div>loading</div>;
