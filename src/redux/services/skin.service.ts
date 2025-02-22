@@ -4,7 +4,7 @@ import { TStep } from '../modules/route.module.ts';
 
 export const skinService = createApi({
   reducerPath: 'skin',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://api.realmcraft.ru/api/skin/' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'https://api.realmcraft.ru/api/skin/' }),
   endpoints: (builder) => ({
     getSkins: builder.query<RequestSkinsDto<TStep>, null>({
       query: () => `/weapons`,
